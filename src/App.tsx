@@ -1,9 +1,11 @@
-import { useLocaleStorage } from "./hooks";
+import { MainPage } from "./pages";
 
 function App() {
-  const [value] = useLocaleStorage("test");
-
-  return value;
+  return (
+    <div className="font-league-spartan">
+      <MainPage />
+    </div>
+  );
 }
 
 export default App;

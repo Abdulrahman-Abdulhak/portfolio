@@ -21,6 +21,22 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
+
+    // /* Aliases */
+    // "baseUrl": "./src",
+    // "paths": {
+    //   "@/*": ["./*"],
+    //   "@core/*": ["./core/*"],
+    //   "@errors/*": ["./errors/*"],
+    //   "@routes/*": ["./routes/*"],
+    //   "@pages/*": ["./pages/*"],
+    //   "@utils/*": ["./utils/*"],
+    //   "@api/*": ["./api/*"],
+    //   "@ui/*": ["./ui/*"],
+    //   "@hooks/*": ["./hooks/*"],
+    //   "@services/*": ["./services/*"],
+    //   "@shared/*": ["./shared/*"]
+    // }
   },
   "include": ["src"]
 }

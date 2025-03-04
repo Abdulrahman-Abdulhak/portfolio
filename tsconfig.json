@@ -1,5 +1,22 @@
 {
   "files": [],
+  // "compilerOptions": {
+  //   /* Aliases */
+  //   "baseUrl": "./src",
+  //   "paths": {
+  //     "@/*": ["./*"],
+  //     "@core/*": ["./core/*"],
+  //     "@errors/*": ["./errors/*"],
+  //     "@routes/*": ["./routes/*"],
+  //     "@pages/*": ["./pages/*"],
+  //     "@utils/*": ["./utils/*"],
+  //     "@api/*": ["./api/*"],
+  //     "@ui/*": ["./ui/*"],
+  //     "@hooks/*": ["./hooks/*"],
+  //     "@services/*": ["./services/*"],
+  //     "@shared/*": ["./shared/*"]
+  //   }
+  // },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

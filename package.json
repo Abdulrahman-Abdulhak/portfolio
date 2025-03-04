@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev:css": "npx tailwindcss -i ./src/styles/index.css -o ./src/index-build.css --watch",
+    "dev:app": "vite",
+    "dev": "concurrently \"npm run dev:*\"",
     "build:css": "npx tailwindcss -i ./src/styles/index.css -o ./src/index-build.css",
-    "build": "tsc -b && vite build",
+    "build:ts": "tsc -b",
+    "build:app": "vite build",
+    "build": "npm run build:css && npm run build:ts && npm run build:app",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -20,6 +24,7 @@
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
     "eslint": "^9.17.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",

@@ -1,0 +1,16 @@
+.mouse-space {
+  --roundness: 1.25rem;
+  --width: calc(var(--roundness) * 2.4);
+  --height: calc(var(--width) * 4 / 3);
+
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--roundness);
+  border-width: calc(var(--roundness) / 5);
+}
+
+.mouse-space > * {
+  animation: scroll-indicator 500ms ease-in-out infinite;
+}
+
+/* TODO: add mouse animation */
