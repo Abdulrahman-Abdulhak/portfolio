@@ -5,7 +5,10 @@ export default {
     extend: {
       fontSize: {
         h1: ["4rem", "normal"],
+        h3: ["2.5rem", "1.2"],
+        h4: ["1.5rem", "1.75rem"],
         content: ["2rem", "1.2"],
+        "content-sm": ["1.25rem", "1.75rem"],
       },
       fontFamily: {
         itim: "itim, sans-serif",
