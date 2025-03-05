@@ -34,3 +34,29 @@ export type NegativeFloat<T extends number> = Float<T> &
 
 let x: Positive<number> = -3 as Positive<number>;
 //  ^?
+
+//* Number Systems
+export type hexadecimal =
+  | 0
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  //TODO: Create string type utility for capitalization
+  | "a"
+  | "b"
+  | "c"
+  | "d"
+  | "e"
+  | "f"
+  | "A"
+  | "B"
+  | "C"
+  | "D"
+  | "E"
+  | "F";

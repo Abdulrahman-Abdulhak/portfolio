@@ -1,5 +1,5 @@
 import girlVector from "../../../../assets/graphics/girl-vector.svg";
-import { ButtonBulging } from "../../../shared";
+import { ButtonBulging } from "../../../../shared";
 
 function Content() {
   return (
