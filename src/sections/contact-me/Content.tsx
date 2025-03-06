@@ -23,7 +23,7 @@ function Content() {
         itemElement={(link) => (
           <a
             href={link.href}
-            className="text-primary underline"
+            className="font-itim text-primary underline"
             target="_blank"
           >
             {link.label}

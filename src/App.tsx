@@ -1,5 +1,5 @@
 import { MainPage } from "./pages";
-import { ContactMe, NavBar } from "./sections";
+import { ContactMe, Copy, NavBar } from "./sections";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <NavBar />
       <MainPage />
       <ContactMe />
+      <Copy />
     </div>
   );
 }
