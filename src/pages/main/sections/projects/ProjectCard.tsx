@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { DotSeparatedList } from "../../../../shared";
 
 type Props = {
   name: string;
@@ -28,19 +29,11 @@ const ProjectCard: React.FC<Props> = ({
         </div>
         <figcaption className="grid grid-cols-2 mt-12">
           <h3 className="text-h3 capitalize">{name}</h3>
-          <ul className="text-2xl capitalize">
-            {skills.map((skill, i) => {
-              const separator =
-                i > 0
-                  ? "before:content-['•'] before:inline-block before:w-[2ch] before:text-center"
-                  : null;
-              return (
-                <li key={name + job + skill} className={`inline ${separator}`}>
-                  {skill}
-                </li>
-              );
-            })}
-          </ul>
+          <DotSeparatedList
+            items={skills}
+            className="text-2xl capitalize"
+            keyGenerator={(skill) => name + job + skill}
+          />
           <h4 className="self-end text-h4 text-[#8C8B8B] capitalize">{name}</h4>
           <p className="self-end text-content-sm tracking-[0.0625rem] text-[#525252]">
             {description}

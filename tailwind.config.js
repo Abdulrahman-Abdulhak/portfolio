@@ -9,6 +9,7 @@ export default {
       fontSize: {
         logo: ["2.5rem", "normal"],
         h1: ["4rem", "normal"],
+        h2: ["3rem", "1.75rem"],
         h3: ["2.5rem", "1.2"],
         h4: ["1.5rem", "1.75rem"],
         content: ["2rem", "1.2"],
